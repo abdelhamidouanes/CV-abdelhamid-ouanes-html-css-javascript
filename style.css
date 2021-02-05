@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Slabo 27px", serif;
+  font-size: 1.4rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+h5,
+h4 {
+  font-size: 1.8rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.nav-container {
+  width: 100%;
+  height: 60px;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+}
+nav {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+}
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  align-items: center;
+  color: white;
+  text-shadow: -3px 4px 16px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+}
+nav ul li:nth-child(1) {
+  flex: 1;
+}
+nav ul li:nth-child(2),
+nav ul li:nth-child(3),
+nav ul li:nth-child(4),
+nav ul li:nth-child(5),
+nav ul li:nth-child(6) {
+  padding: 0px 20px;
+}
+
+header::before {
+  width: 100%;
+  height: 530px;
+  min-height: 530px;
+  position: relative;
+  content: "";
+  position: absolute;
+  top: 0;
+  background-image: url("img/bg img2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px);
+}
+header {
+  width: 100%;
+  height: 530px;
+  min-height: 530px;
+  position: relative;
+}
+
+#profilepic {
+  border-radius: 50%;
+  width: 150px;
+  filter: brightness(0.8) contrast(1.28) sepia(0.35);
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  height: 220px;
+  min-height: 220px;
+  color: white;
+  text-shadow: -3px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.presentation h2 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.5rem;
+}
+.contact-btn {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-btn button {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+  margin: 10px 40px;
+  background-color: rgb(202, 184, 160);
+  color: white;
+  width: 200px;
+}
+.socialbtn-container {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  width: 250px;
+  transform: translate(-50%, 50%);
+  display: flex;
+  align-items: center;
+}
+.social-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.social-btn .one-socialbtn-containerfb,
+.one-socialbtn-containeris,
+.one-socialbtn-containerin,
+.one-socialbtn-containergh {
+  background-color: rgb(202, 184, 160);
+  color: white;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.social-btn .one-socialbtn-containerfb:hover {
+  background-color: white;
+  font-size: 2.2rem;
+  color: #4267b2;
+}
+.social-btn .one-socialbtn-containeris:hover {
+  background-color: white;
+  font-size: 2.2rem;
+  color: #c13584;
+}
+.social-btn .one-socialbtn-containerin:hover {
+  background-color: white;
+  font-size: 2rem;
+  color: #0077b5;
+}
+.social-btn .one-socialbtn-containergh:hover {
+  background-color: white;
+  font-size: 2rem;
+  color: #bd2c00;
+}
